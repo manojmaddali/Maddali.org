@@ -1,0 +1,44 @@
+.switcher {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 45px;
+  padding: 10px;
+  background: #fff;
+}
+.switcher li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 24px;
+  width: 24px;
+  margin: 2px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+.switcher span {
+  display: block;
+  text-align: center;
+}
+@media screen and (max-width: 650px), screen and (max-height: 650px) and (max-width: 1000px) {
+  .switcher {
+    display: none;
+  }
+}
+
+.bgnoise .bgnoise,
+.lghtmesh .lghtmesh,
+.white_carbon .white_carbon,
+.white_carbonfiber .white_carbonfiber,
+.squares .squares {
+  border: 1px solid #333;
+}
+
+.no-js .switcher {
+  height: 14px;
+}
+.no-js .switcher ul {
+  display: none;
+}

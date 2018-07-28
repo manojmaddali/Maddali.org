@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!-- Consider specifying the language of your content by adding the `lang` attribute to <html> -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head lang="en">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>vFlip - Responsive Animated vCard</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="stylesheets/prettyPhoto.css" type="text/css" media="all">
+   <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="stylesheets/switcher.css" type="text/css" media="all">
+   <script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+
+
+<body class="start bgnoise"><!-- make sure to keep "start" -->
+<div class="switcher">
+   <ul>
+      <li class="squares"></li>
+      <li class="bgnoise"></li>
+      <li class="white_carbon"></li>
+      <li class="lghtmesh"></li>
+      <li class="white_carbonfiber"></li>
+   </ul>
+   <span><a href="index.php">View more page choices</a></span>
+</div>
+<nav>
+	<ul>
+      <!-- Home -->
+      <li class="topLeft"><a href="#home" data-id="homeFace"><!-- DO NOT CHANGE THIS HREF/DATA-ID -->
+      <span aria-hidden="true" data-icon="&#x2617;"></span><span>Home</span></a></li> 
+
+      <!-- About -->
+		<li class="topRight"><a href="#about" data-id="aboutFace">
+      <span aria-hidden="true" data-icon="&#x263a;"></span><span>About</span></a></li>
+   
+      <!-- Resume -->
+      <li class="bottomLeft"><a href="#resume" data-id="resumeFace">
+      <span aria-hidden="true" data-icon="&#x25af;"></span><span>R&eacute;sum&eacute;</span></a></li>
+      
+      <!-- Contact -->
+		<li class="bottomRight"><a href="#contact" data-id="contactFace">
+      <span aria-hidden="true" data-icon="&#x25db;"></span><span>Contact</span></a></li>
+		
+	</ul>
+</nav>
+<div class="container">
+
+   <!-- Home / Minimal -->
+
+   <!-- the "data-menu-pos" attribute corresponds to which position the menu item for this face is in -->
+   <!-- You cannot change the href/id related to the home face -->
+   <div id="homeFace" class="face home" data-menu-pos="topLeft"><!-- DO NOT CHANGE THE ID OF THIS -->
+	<h1><span>Laurence Ipsum<br/><span class="jobTitle">Web Developer / Designer</span></span></h1>
+	</div>
+   
+	  <!-- About -->
+
+   <!-- the "id" must match the "data-id" of the menu item -->
+   <!-- the "data-menu-pos" attribute corresponds to the class of the corresponding menu item -->
+   <div id="aboutFace" class="face" data-menu-pos="topRight">
+         <div class="imageCol col">
+            <!-- This image displays at 190px x 190px, but you should save it as 380px x 380px to support high res screens -->
+            <img src="images/ben.jpg" alt="Laurence Ipsum" class="borderedImage profilePic">
+
+
+            <h3>Laurance Ipsum</h3>
+            <h4>Web Developer / Designer</h4>
+            <ul>
+            <li class="employment">CEO, Google 2001 - 2012</li>
+            <li class="education">University of Cambridge 1999</li>
+            </ul>
+            <a class="button" href="#about"><span aria-hidden="true" data-icon="&#x2b07;"></span> Download Full CV</a>
+         </div>
+         <div class="aboutCol col">
+             <!-- You can link to other pages on this site by using the corrent # url -->
+            <h2>Doing it Right Since 1997</h2>
+            <p>Sed <strong>magnis</strong> <em>augue</em> lacus a, magna elementum. <a href="#portfolio">Portfolio</a> parturient phasellus tincidunt nisi, augue vel sed dapibus sed enim.
+            Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.</p>
+            <p>Sed magnis augue lacus a, magna elementum. Parturient phasellus <a href="#resume">resume</a> tincidunt nisi, augue vel sed dapibus sed enim.
+            Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.</p>
+            <p>Augue vel sed dapibus sed enim.
+            Nunc nunc dapibus, in a cursus! Velit pellentesque enim nascetur integer elit.</p>
+         </div>
+   </div>
+
+   <!-- Resume -->
+
+   <!-- the "id" must match the "data-id" of the menu item -->
+   <!-- the "data-menu-pos" attribute corresponds to the class of the corresponding menu item -->
+   <div id="resumeFace" class="face" data-menu-pos="bottomLeft">
+      <div class="detailsCol col">
+         <h2>Employment</h2>
+         <ul class="employment">
+            <li>
+               <h3>Chief Engineer</h3>
+               <span class="place">Facebook</span>
+               <span class="date">2011-2012</span>
+            </li>
+            <li>
+               <h3>Chief Engineer</h3>
+               <span class="place">Facebook</span>
+               <span class="date">2011-2012</span>
+            </li>
+            <li>
+               <h3>Chief Engineer</h3>
+               <span class="place">Facebook</span>
+               <span class="date">2011-2012</span>
+            </li>
+            <li>
+               <h3>Chief Engineer</h3>
+               <span class="place">Facebook</span>
+               <span class="date">2011-2012</span>
+            </li>
+             </ul>
+            <h2>Education</h2>
+            <ul class="education">
+            <li>
+               <h3>University of Cambridge</h3>
+               <span class="course">Computer Science</span>
+               <span class="date">2002</span>
+            </li>
+            <li>
+               <h3>University of Cambridge</h3>
+               <span class="course">Computer Science</span>
+               <span class="date">2002</span>
+            </li>
+            <li>
+               <h3>University of Cambridge</h3>
+               <span class="course">Computer Science</span>
+               <span class="date">2002</span>
+            </li>
+            <li>
+               <h3>University of Cambridge</h3>
+               <span class="course">Computer Science</span>
+               <span class="date">2002</span>
+            </li>
+         </ul>
+      </div>
+      <div class="skillsCol col">
+         <h2>Skills</h2>
+         <!-- change the skill level with the inline "width" attribute -->
+         <ul>
+            <li>
+            Adobe Photoshop
+            <span class="skillLevel"><span style="width:80%"></span></span>
+            </li>
+            <li>
+            Adobe Illustrator
+            <span class="skillLevel"><span style="width:50%"></span></span>
+            </li>
+            <li>
+            Adobe Flash
+            <span class="skillLevel"><span style="width:30%"></span></span>
+            </li>
+            <li>
+            HTML5 / CSS3
+            <span class="skillLevel"><span style="width:90%"></span></span>
+            </li>
+            <li>
+            jQuery
+            <span class="skillLevel"><span style="width:80%"></span></span>
+            </li>
+            <li>
+            Canvas
+            <span class="skillLevel"><span style="width:20%"></span></span>
+            </li>
+            <li>
+            Nunchucks
+            <span class="skillLevel"><span style="width:95%"></span></span>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <!-- contact -->
+
+   <!-- the "id" must match the "data-id" of the menu item -->
+   <!-- the "data-menu-pos" attribute corresponds to the class of the corresponding menu item -->
+	<div id="contactFace" class="face" data-menu-pos="bottomRight">
+       <div class="col contactDetailsCol">
+         <h2>Details</h2>
+         <ul class="contactDetails">
+           <li class="address">Address Line 1<br/>Address Line 2<br/>City<br/>Post Code</li>
+           <li class="mobile">07566 789 123</li>
+           <li class="phone">+44 (0)20 891 234</li>
+           <li class="mail">email@address.com</li>
+         </ul>
+         <div class="contactButtons">
+            <p><a class="button" href="#contact"><span aria-hidden="true" data-icon="&#x2b07;"></span> Download vCard</a></p>
+            <ul class="socialIcons">
+               <!-- linkedin -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x69;"></span></a></li>
+
+               <!-- vimeo -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x76;"></span></a></li>
+
+               <!-- youtube -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x79;"></span></a></li>
+
+               <!-- facebook -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x66;"></span></a></li>
+
+               <!-- twitter -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x77;"></span></a></li>
+
+               <!-- flickr -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x6b;"></span></a></li>
+
+               <!-- G+ -->
+               <li><a href="#contact"><span aria-hidden="true" data-icon="&#x2716;"></span></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="col contactFormCol">
+         <h2 id="contactForm">Get in Touch</h2>
+         <div class="contactPop"></div>
+         <form id="ajax-contact-form" method="post" action="contactform/submit.php">
+            <label class="input"><span>Name</span><input type="text" name="name" value="" /></label>
+            <label class="input"><span>E-Mail</span><input type="text" name="email" value="" /></label>
+            <label class="input"><span>Message...</span><textarea name="message" rows="6" cols="30"></textarea></label>
+            <button name="submit" type="submit" class="btn"><span aria-hidden="true" data-icon="&#x25db;"></span> Send</button>
+         </form>
+
+         
+      </div>
+	</div>
+   
+ 
+</div>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/lib/jquery.min.js"><\/script>')</script>
+
+<script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="js/jquery.rs.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.min.js"></script>
+<script type="text/javascript" src="js/card.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
+</body>
+</html>
