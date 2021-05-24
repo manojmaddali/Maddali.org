@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!-- Consider specifying the language of your content by adding the `lang` attribute to <html> -->
@@ -13,8 +14,8 @@
    <meta name="viewport" content="width=device-width">
    <link rel="stylesheet" href="stylesheets/prettyPhoto.css" type="text/css" media="all">
    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
+   <link rel="stylesheet" href="stylesheets/switcher.css" type="text/css" media="all">
    <script type="text/javascript" src="js/modernizr.js"></script>
-   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 
 
@@ -23,20 +24,20 @@
 	<ul>
       <!-- Home -->
       <li class="topLeft"><a href="#home" data-id="homeFace"><!-- DO NOT CHANGE THIS HREF/DATA-ID -->
-      <span aria-hidden="true" data-icon="&#x2617;"></span><span>Home</span></a></li>
+      <span aria-hidden="true" data-icon="&#x2617;"></span><span>Home</span></a></li> 
 
       <!-- About -->
 		<li class="topRight"><a href="#about" data-id="aboutFace">
       <span aria-hidden="true" data-icon="&#x263a;"></span><span>About</span></a></li>
-
+   
       <!-- Resume -->
       <li class="bottomLeft"><a href="#resume" data-id="resumeFace">
       <span aria-hidden="true" data-icon="&#x25af;"></span><span>Education</span></a></li>
-
+      
       <!-- Contact -->
-		<li class="bottomRight"><a href=" #contact" data-id="contactFace">
+		<li class="bottomRight"><a href="#contact" data-id="contactFace">
       <span aria-hidden="true" data-icon="&#x25db;"></span><span>Contact</span></a></li>
-
+		
 	</ul>
 </nav>
 <div class="container">
@@ -48,7 +49,7 @@
    <div id="homeFace" class="face home" data-menu-pos="topLeft"><!-- DO NOT CHANGE THE ID OF THIS -->
 	<h1><span>Manoj Maddali, MD<br/><span class="jobTitle">Virtual Business Card</span></span></h1>
 	</div>
-
+   
 	  <!-- About -->
 
    <!-- the "id" must match the "data-id" of the menu item -->
@@ -56,7 +57,7 @@
    <div id="aboutFace" class="face" data-menu-pos="topRight">
          <div class="imageCol col">
             <!-- This image displays at 190px x 190px, but you should save it as 380px x 380px to support high res screens -->
-            <img src="./images/profile.jpg" alt="Profile Image" class="borderedImage profilePic">
+            <img src="images/profile.jpg" alt="Laurence Ipsum" class="borderedImage profilePic">
 
 
             <h3>Manoj Maddali, MD</h3>
@@ -77,10 +78,42 @@
    <!-- the "data-menu-pos" attribute corresponds to the class of the corresponding menu item -->
    <div id="resumeFace" class="face" data-menu-pos="bottomLeft">
       <div class="detailsCol col">
-	  		<h2>Residency, University of California San Francisco, 2020</h2>
-            <h2>MD, Johns Hopkins University School of Medicine, 2017</h2>
-            <h2>BSE, Duke University, Biomedical Engineering, 2013</h2>
-            <h2>Mississippi School for Mathematics and Science, 2009</h2>
+            <h2>Education</h2>
+            <ul class="education">
+            <li>
+               <h3>Stanford University</h3>
+               <span class="course">Fellowship, Pulmonary/Critical Care</span>
+               <span class="date">2021 - Present</span>
+            </li>
+            <li>
+               <h3>Johns Hopkins University</h3>
+               <span class="course">Doctor of Medicine</span>
+               <span class="date">2013 - 2017</span>
+            </li>
+            <li>
+               <h3>UCSF</h3>
+               <span class="course">Internal Medicine Residency</span>
+               <span class="date">2017 - 2020</span>
+            </li>
+            <li>
+               <h3>Duke University</h3>
+               <span class="course">BSE, Biomedical Engineering</span>
+               <span class="date">2009 - 2013</span>
+            </li>            
+         </ul>
+         <h2>Employment</h2>
+         <ul class="employment">
+            <li>
+               <h3>Staff Hospitalist</h3>
+               <span class="place">UCSF</span>
+               <span class="date">2020 - 2021</span>
+            </li>
+            <li>
+               <h3>HIV-ASSIST, Inc</h3>
+               <span class="place">Deputy Director</span>
+               <span class="date">2019 - Present</span>
+            </li>
+             </ul>
       </div>
    </div>
 
@@ -95,14 +128,12 @@
            <li class="mail">manoj [at] maddali.org</li>
 		   <li class="mail">manojmaddali [at] gmail.com</li>
 		   <li class="mail">manoj.maddali [at] ucsf.edu</li>
-
-  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="manojmaddali"><a class="LI-simple-link" href='https://www.linkedin.com/in/manojmaddali?trk=profile-badge'>Manoj Maddali</a></div>
-
+       <li>Find me on <a href="https://www.linkedin.com/in/manojmaddali" target="_blank">LinkedIn</a></li> 
          </ul>
       </div>
 	</div>
-
-
+   
+ 
 </div>
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -113,5 +144,6 @@
 <script type="text/javascript" src="js/jquery.rs.carousel.js"></script>
 <script type="text/javascript" src="js/jquery.prettyPhoto.min.js"></script>
 <script type="text/javascript" src="js/card.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
 </body>
 </html>
